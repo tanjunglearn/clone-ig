@@ -1,0 +1,24 @@
+- title: Clone IG
+- type: fullstack
+- backend:
+  - env:
+    - port: 8081
+    - mode: [development, production]
+    - mongo_url
+  - folders / file:
+    - server:
+      - index.js
+      - config:
+        - db.js
+      - controllers
+      - models
+      - routes
+  - requires:
+    - MongoDB
+    - packages:
+      - mongoose
+      - nodemon
+      - express
+      - dotenv
+      - cors
+      - morgan

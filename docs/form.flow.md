@@ -1,0 +1,33 @@
+- readme:
+  - title:
+    - nuxt 3 form
+  - desc:
+    - reactive form for nuxt 3
+  - depedencies:
+    - yup
+- events:
+  - change
+  - focus
+  - blur
+  - submit
+- things:
+  - info:
+    - events:
+      - focus
+    - examples:
+      - Password harus 4 karakter
+      - Username harus unique
+  - validations:
+    - events:
+      - change
+      - submit
+    - ingredients:
+      - message error
+    - types:
+      - required
+      - isSTring
+      - isNumber
+      - isDate
+      - isEmail
+- params:
+  -

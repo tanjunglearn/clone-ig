@@ -1,0 +1,45 @@
+ @layer base {
+  .ci-input--box {
+    @apply
+      flex
+      items-center
+      relative
+      border-[1px]
+      border-solid
+      border-grey-border
+      rounded-[3px]
+    ;
+  }
+  .ci-input--text {
+    @apply
+      input
+      relative
+      h-9
+      w-full
+      input-sm
+      max-w-xs
+      z-10
+      text-xs
+      bg-transparent
+      focus:outline-0
+    ;
+    transition: all .1s ease-out;
+  }
+  .ci-input--label {
+    @apply
+      block
+      absolute
+      left-3
+      text-xs
+      text-grey
+    ;
+    transition: all .1s ease-out;
+  }
+  .ci-input--text.--valid {
+    @apply pt-3 pb-[2px];
+  }
+  .ci-input--text.--valid ~ .ci-input--label {
+    font-size: 10px;
+    transform: translateY(-9px);
+  }
+ }
